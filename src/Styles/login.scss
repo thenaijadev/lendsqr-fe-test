@@ -1,0 +1,35 @@
+@import "./variables/variables.scss";
+.login_page {
+  display: flex;
+  align-items: center;
+  transform: scale(0.9);
+}
+
+.login_nav {
+  width: 100vw;
+  height: 10vh;
+}
+.union {
+  width: 25px;
+}
+.logo {
+  margin: 12vh 10vw;
+  max-width: 10vw;
+  display: flex;
+  justify-content: space-around;
+  img {
+    max-width: 7vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .login_page {
+    flex-direction: column;
+  }
+  .logo {
+    max-width: 25vw;
+    img {
+      max-width: 15vw;
+    }
+  }
+}

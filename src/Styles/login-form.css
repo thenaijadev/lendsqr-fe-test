@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap");
+.welcome {
+  color: rebeccapurple;
+  font-family: "work-sans", sans-serif;
+  color: #213F7D;
+  font-size: 40px;
+}
+
+.subtitle {
+  color: #545f7d;
+  font-family: "work-sans", sans-serif;
+  margin-top: -10px;
+  margin-bottom: 60px;
+}
+
+.form_parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding-left: 8vw;
+  transform: translatey(-55px);
+}
+
+form {
+  margin: 10%;
+  width: 40vw;
+}
+form input {
+  display: block;
+  margin-top: 5%;
+  padding: 2vh;
+  width: 30vw;
+  border-radius: 5px;
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  outline: none;
+  margin-bottom: 5%;
+  transition: 0.2s;
+}
+form input:focus {
+  outline: 2px solid #39CDCC;
+  border: none;
+}
+form button {
+  display: block;
+  background-color: #39CDCC;
+  border: none;
+  border-radius: 8px;
+  margin-top: 5%;
+  padding: 2vh;
+  width: 32.5vw;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+form button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #47f6f6;
+}
+form a {
+  text-decoration: none;
+  color: #39CDCC;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+  .form_parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translatey(-55px);
+  }
+  .welcome {
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+  }
+  form {
+    transform: translateX(-20px);
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  form input {
+    padding: 2vh;
+    width: 80vw;
+    transition: 0.2s;
+    margin: 2vh;
+  }
+  form input:focus {
+    outline: 2px solid #39CDCC;
+    border: none;
+  }
+  form button {
+    width: 50vw;
+  }
+  form button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #47f6f6;
+  }
+  form a {
+    text-decoration: none;
+    color: #39CDCC;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}/*# sourceMappingURL=login-form.css.map */

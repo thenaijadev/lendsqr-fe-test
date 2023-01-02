@@ -1,0 +1,18 @@
+@import "./variables/variables.scss";
+.imagecard_parent {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 50vw;
+    margin-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .imagecard_parent {
+    display: none;
+  }
+}
